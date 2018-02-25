@@ -26,7 +26,7 @@ git clone https://github.com/GrissomErick/Bamazon.git
 ```
 cd Bamazon
 ```
-**Step 3 - Install required NPM packages. (What is an NPM package is? It's past your bedtime, go to bed)**
+**Step 3 - Install required NPM packages.**
 ```
 npm install
 ```
