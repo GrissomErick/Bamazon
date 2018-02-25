@@ -16,7 +16,7 @@
 * Text holder here
 
 ## Getting Started
-Bamazon is a CLI, command line interface, application that uses Node.js and MySQL to store and retive user inputs and queries. To use the app you accomplish the following steps
+Bamazon is a CLI, command line interface, application that uses Node.js and MySQL to store and retive user inputs and queries. To use the app you must accomplish the following steps below:
 
 **Step 1 - Clone my repo using the command line below.**
 ```
