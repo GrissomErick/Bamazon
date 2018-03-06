@@ -52,5 +52,3 @@ node bamazonCustomer.js
 ## Author
 
 * **Erick Grissom** - *JS/Node.js/MySQL* - [Erick Grissom Bamazon Repo](https://github.com/GrissomErick/Bamazon)
-
-
