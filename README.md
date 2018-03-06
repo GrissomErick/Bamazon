@@ -22,7 +22,7 @@ Bamazon is a CLI, command line interface, application that uses Node.js and MySQ
 ```
 git clone https://github.com/GrissomErick/Bamazon.git
 ```
-**Step 2 - Change directory the cloned repo folder.**
+**Step 2 - Change directory to the cloned repo folder.**
 ```
 cd Bamazon
 ```
@@ -30,7 +30,7 @@ cd Bamazon
 ```
 npm install
 ```
-**Step 4 - Run the constructor hangman app**
+**Step 4 - Run the bamazon customer app**
 ```
 node bamazonCustomer.js
 ```
