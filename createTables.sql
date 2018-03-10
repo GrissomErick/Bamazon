@@ -18,6 +18,15 @@ CREATE TABLE products(
 	("Oranges", "Produce", 4.25, 300),
 	("Grapes", "Produce", 3.85, 500),
 	("Cherry Kool Aid", "Produce", 0.99, 4000),
+<<<<<<< HEAD
+	("Cycling Bike", "Fitness", 1199.95, 250),
+	("Vinyl Coated Kettlebell", "Fitness", 19.95, 500),
+	("Orange Crush", "Beverages", 2.95, 2000),
+	("Paula Dean Sausage Cheese Balls", "Breakfast Foods", 3.95, 700),
+	("Beyoncé - Lemonade", "Music", 19.95, 25),
+	("MyPillow", "Bedding", 49.99, 18),
+	("KLANTOP Portable Music Player", "Electronics", 1.00, 500);
+=======
 	("Sunny Health Cycling Bike", "Fitness", 1199.95, 250),
 	("Vinyl Coated Kettlebell", "Fitness", 19.95, 500),
 	("Orange Crush", "Beverages", 2.95, 2000),
@@ -25,3 +34,4 @@ CREATE TABLE products(
 	("Led Zeppelin - Stairway to Heaven", "Music", 19.95, 25),
 	("MyPillow", "Bedding", 49.99, 18),
 	("KLANTOP Portable Music Player", "Electronics", 1.00, 0);
+>>>>>>> 6b88e6a50bee12e1ba8fbeddb6e22e13dedb6a2b

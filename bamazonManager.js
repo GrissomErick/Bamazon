@@ -43,8 +43,18 @@ function menu() {
 /*If a manager selects View Products for Sale, the app should list every
 available item: the item IDs, names, prices, and quantities.*/
 function listItems() {
+<<<<<<< HEAD
+	var con = mysql.createConnection({
+		host: "localhost",
+		port: 3306,
+		user: "root",
+		password: "1234",
+		database: "bamazon"
+	});
+=======
 	var secrets = require("./connection.js");
 	var con = mysql.createConnection(secrets.details);
+>>>>>>> 6b88e6a50bee12e1ba8fbeddb6e22e13dedb6a2b
 	con.connect();
 	return con
 }

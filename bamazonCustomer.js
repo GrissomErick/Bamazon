@@ -1,6 +1,13 @@
+<<<<<<< HEAD
+var mysql = require('mysql');
+var inquirer = require('inquirer')
+var Table = require('cli-table');
+
+=======
 var Table = require('cli-table');
 var inquirer = require('inquirer')
 var mysql = require('mysql');
+>>>>>>> 6b88e6a50bee12e1ba8fbeddb6e22e13dedb6a2b
 
 function connectToDb() {
 	/*Connect to db*/
@@ -8,11 +15,18 @@ function connectToDb() {
 		host: "localhost",
 		port: 3306,
 		user: "root",
+<<<<<<< HEAD
+		password: "1234",
+		database: "bamazon"
+	});
+	
+=======
 		password: "uncbc",
 		database: "bamazon"
 	});
 	
 	var con = mysql.createConnection(secrets.details);
+>>>>>>> 6b88e6a50bee12e1ba8fbeddb6e22e13dedb6a2b
 	con.connect();
 	displayItems(con)
 

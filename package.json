@@ -1,7 +1,11 @@
 {
   "name": "bamazon",
   "version": "1.0.0",
+<<<<<<< HEAD
+  "description": "<p align=\"center\"> <img src=\"https://github.com/GrissomErick/Bamazon/blob/master/images/bamazon.png?raw=true\" alt=\"Project logo\"></img> </p>",
+=======
   "description": "Amazon like store front using Node JS and mysql db",
+>>>>>>> 6b88e6a50bee12e1ba8fbeddb6e22e13dedb6a2b
   "main": "bamazonCustomer.js",
   "dependencies": {
     "cli-table": "^0.3.1",
@@ -10,13 +14,21 @@
   },
   "devDependencies": {},
   "scripts": {
+<<<<<<< HEAD
+    "test": "echo \"Error: no test specified\" && exit 1"
+=======
     "test": "node bamazonCustomer.js"
+>>>>>>> 6b88e6a50bee12e1ba8fbeddb6e22e13dedb6a2b
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GrissomErick/Bamazon.git"
   },
+<<<<<<< HEAD
+  "author": "",
+=======
   "author": "Erick Grissom",
+>>>>>>> 6b88e6a50bee12e1ba8fbeddb6e22e13dedb6a2b
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GrissomErick/Bamazon/issues"
