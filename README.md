@@ -7,16 +7,14 @@
  UNC Coding Boot Camp - Bamazon - Assignment #10 (MySQL)
  <p></p>
  
-**MyRant** - text holder here. 
+**MyRant** - Bamazon is Amazon-like storefront terminal console application that can take orders from a customer, display the order total, display depleted stock and resupply the inventory using a separate management terminal console application. . 
 
-**MyBonus** - this one is a lot, doubt there will be any bonus talk from me
+**MyBonus** - Used the [Cli-table](https://www.npmjs.com/package/cli-table) npm package  to format the applications table outputs
 
-## Features
 
-* Text holder here
 
 ## Getting Started
-Bamazon is a CLI, command line interface, application that uses Node.js and MySQL to store and retive user inputs and queries. To use the app you must accomplish the following steps below:
+To use the app you must accomplish the following steps below:
 
 **Step 1 - Clone my repo using the command line below.**
 ```
@@ -34,14 +32,13 @@ npm install
 ```
 node bamazonCustomer.js
 ```
----
+## Required GIF Screen Capture
+<img src="https://github.com/GrissomErick/Bamazon/blob/master/images/bamazonCustomer.gif?raw=true" alt="Bamazo Customer GIF"></img>
 ## Technology used
 - Node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
 - MySQL NPM Package - [https://www.npmjs.com/package/mysql](https://www.npmjs.com/package/mysql)
 - Inquirer NPM Package - [https://www.npmjs.com/package/inquirer](https://www.npmjs.com/package/inquirer)
-
-## Future Improvement
-* Text holder here
+- Cli-table NPM Package - [https://www.npmjs.com/package/cli-table](https://www.npmjs.com/package/cli-table)
 
 ## Built With
 
@@ -52,3 +49,5 @@ node bamazonCustomer.js
 ## Author
 
 * **Erick Grissom** - *JS/Node.js/MySQL* - [Erick Grissom Bamazon Repo](https://github.com/GrissomErick/Bamazon)
+
+
