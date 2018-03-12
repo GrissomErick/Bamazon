@@ -1,133 +1,157 @@
-<<<<<<< HEAD
-var mysql = require('mysql');
-var inquirer = require('inquirer')
+var mysql = require("mysql");
+var inquirer = require("inquirer");
 var Table = require('cli-table');
 
-=======
-var Table = require('cli-table');
-var inquirer = require('inquirer')
-var mysql = require('mysql');
->>>>>>> 6b88e6a50bee12e1ba8fbeddb6e22e13dedb6a2b
+//database parameters
+var con = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "1234",
+    database: "bamazon"
+});
 
-function connectToDb() {
-	/*Connect to db*/
-	var con = mysql.createConnection({
-		host: "localhost",
-		port: 3306,
-		user: "root",
-<<<<<<< HEAD
-		password: "1234",
-		database: "bamazon"
-	});
-	
-=======
-		password: "uncbc",
-		database: "bamazon"
-	});
-	
-	var con = mysql.createConnection(secrets.details);
->>>>>>> 6b88e6a50bee12e1ba8fbeddb6e22e13dedb6a2b
-	con.connect();
-	displayItems(con)
+//database connection
+con.connect(function(err) {
+    if(err) {
+        console.log('Error connecting to Db: ' + err);
+        return;
+    }
+});
 
+console.log('---------- Welcome to BAMAZON! ----------');
+console.log('Please, select an item to purchase:');
+console.log('');
+
+var prod_arr = []; // Array to hold products info
+
+// Function show products info
+function productPurchase() {
+
+    // Get from database and create table with products info
+    con.query('SELECT * FROM products', function(err, res) {
+
+        if(err) {
+            console.log('Error select: ' + err);
+            return;
+        }
+
+        //create table: head and column size
+        var table = new Table({
+            head: ['ID', 'NAME', 'DEPARTMENT', 'U$', 'Q#'],
+            colWidths: [5, 20, 15, 12, 5]
+        });
+
+        prod_arr.length = 0; // Clear array before add the values again
+
+        for(var i=0;i<res.length;i++) {
+            table.push([res[i].item_id,res[i].product_name,res[i].department_name,res[i].price.toFixed(2),res[i].stock_quantity]); // Add elements to table
+            prod_arr.push([res[i].item_id,res[i].product_name,res[i].department_name,res[i].price,res[i].stock_quantity,res[i].product_sales]); // Add elements to array
+        }
+        console.log(table.toString()); // Show table
+        console.log('');
+
+        selectProduct(); // Call Function select products
+    });
 }
 
+// Function select products to purchase
+function selectProduct() {
 
+    // Asks the ID and quantity
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "Type the ID of the desired product:",
+            name: "product_id"
+        }, {
+            type: "input",
+            message: "Type the quantity you want:",
+            name: "quantity"
+        }
+    ]).then(function(a) {
+        var id = parseInt(a.product_id); // Get product ID and turn it into an int
+        var desired_qty = parseInt(a.quantity); // Get the quantity and turn it into an int
 
-function displayItems(con) {
-	/*Display all items available for sale*/
-	var queryString = "SELECT * FROM products";
+        // If product's ID does not exists, call function again
+        if(id < 1 || id >= prod_arr.length) {
+            console.log('');
+            console.log('Product not found, please try again!');
+            console.log('');
+            selectProduct();
+        }
 
-	con.query(queryString, function(error, rows, fields) {
-		if(error) throw error;
-		var table = new Table({ head: ['Item ID', 'Product Name', 'Department Name', 'Price', 'Stock'], 
-	    colWidths: [10, 25, 20, 10, 10]
-		});
+        var stock_qty = prod_arr[id-1][4]; // Get stock quantity from array
 
-		var ids = [];
-		var quantities = [];
-		for(var i in rows) {
-			table.push([rows[i].item_id, rows[i].product_name, rows[i].department_name, rows[i].price, rows[i].stock_quantity]);
-			ids.push(rows[i].item_id)
-			quantities.push(rows[i].stock_quantity)
-		}
-		console.log(table.toString());
-		getItem(ids, quantities, con);
-	});
+        // If quantoty greater than stock, call function again
+        if(desired_qty > stock_qty) {
+            console.log('');
+            console.log('Insufficient quantity!');
+            console.log('Please select again:');
+            console.log('');
+            selectProduct();
+        } else {
+
+            var new_quantity = stock_qty - desired_qty; // Get the new stock value to update the database
+            var cost = parseFloat(prod_arr[id-1][5]) + (desired_qty * parseFloat(prod_arr[id-1][3])); // Get the value to update the database
+            var spent = (desired_qty * parseFloat(prod_arr[id-1][3])).toFixed(2); // Calculates the value spent by the user
+
+            // Updates the database with new values
+            con.query('UPDATE products SET ? WHERE ?', [
+                {stock_quantity: new_quantity, product_sales: cost.toFixed(2)},
+                {item_id: id}
+            ], function(err, res) {
+                if(err) {
+                    console.log('Error update: ' + err);
+                    return;
+                }
+
+                console.log('');
+                console.log('You purchased ' + desired_qty + ' ' + prod_arr[id-1][1] + '(s)');
+                console.log('You spent U$' + spent + ' dollar(s)');
+            });
+
+            // Get department to update it's total sales
+            con.query('SELECT department_id, total_sales FROM departments WHERE department_name = ?', [prod_arr[id-1][2]], function(err, res) {
+                if(err) {
+                    console.log('Error select: ' + err);
+                    return;
+                }
+
+                var total = parseFloat(res[0].total_sales) + (desired_qty * parseFloat(prod_arr[id-1][3]));
+
+                // Update total sales of the department
+                con.query('UPDATE departments SET ? WHERE ?', [
+                    {total_sales: total.toFixed(2)},
+                    {department_id: res[0].department_id}
+                ], function(err, res) {
+                    if(err) {
+                        console.log('Error update: ' + err);
+                        return;
+                    }
+
+                    console.log('');
+                    console.log('');
+
+                    // Asks if user wants to buy more products
+                    inquirer.prompt([
+                        {
+                            type: "list",
+                            message: "Do you want to buy another product?",
+                            choices: ["Yes", "No (Exit)"],
+                            name: "option"
+                        }
+                    ]).then(function(a) {
+                        if(a.option == "Yes") {
+                            productPurchase(); // If yes, call function again
+                        } else {
+                            con.end(function(err) {}); // If no, ends the application
+                        }
+                    });
+                });
+            });
+        }
+    });
 }
 
-function getItem(ids, quantities, connection) {
-	let item = -1;
-	let quantity = 0;
-	var questions = [
-	{
-	type: 'input',
-	name: 'enter_id',
-	message: 'What item do you want to buy?',
-	validate: function(value) {
-			if(ids.includes(parseInt(value))) {
-				item = parseInt(value)
-				return true
-			}
-			else {
-				console.log("Please enter an Item ID on the list.")
-			}
-		}
-	},
-	{
-	type: 'input',
-	name: 'how_many',
-    message: 'How many do you want to buy?',
-    default: function() {
-    		return 5;
-		},
-	validate: function(value) {
-			try {
-				value = parseInt(value);
-			}
-			catch(error) {
-				console.log("Please enter a number.");
-			}
-			if(value.isInteger ===false) {
-				console.log("Please enter an integer")
-			}
-			else if(quantities[item] - parseInt(value) < 0) {
-				console.log("\nInsufficient quantity! Try ordering less!");
-			}
-			else {
-				quantity = parseInt(value)
-				return true;
-			}
-		}
-	}];
-  	inquirer.prompt(questions).then(function() {
-	  	return updateStock(item, quantity, connection);
-	});
-}
-
-function quit(connection) {
-	connection.end((error) => {
-		if(error) throw error;
-		console.log("Closing connection");
-	});
-}
-
-function updateStock(item, quantity, connection) {
-	var sql = "UPDATE products SET stock_quantity = stock_quantity - ? WHERE item_id = ?";
-  	connection.query(sql,[quantity, item], function (err, result) {
-    	if (err) throw err;
-    	console.log("Record updated");
-  	});
-  	console.log("You are buying "+quantity+" of these item number "+item+"s!\n")
-  	var sql = "SELECT price FROM products WHERE item_id = ?";
-  	connection.query(sql, item, function(error, result) {
-    	if (error) throw error;
-    	result = JSON.stringify(result);
-    	result = JSON.parse(result);
-    	console.log("And it only cost you $"+result[0]["price"]*quantity+"!\n\n")
-    	/*Ask user if they want to buy more or quit()*/
-    	return connectToDb();
-  	});
-}
-
-connectToDb();
+productPurchase(); // First Function called
