@@ -1,3 +1,10 @@
+//==============================================================================
+// My goals for this homework
+// 1. No sploppy code, try simply with less code for the same function
+// 2. Use the cli-table npm package to diplay well formated store data
+// 3. Reasearch and ask Alpher about SQL Injection prevention 
+//==============================================================================
+
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 var Table = require('cli-table');

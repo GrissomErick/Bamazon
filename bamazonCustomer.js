@@ -1,3 +1,10 @@
+//==============================================================================
+// My goals for this homework
+// 1. No sploppy code, try simply with less code for the same function
+// 2. Use the cli-table npm package to diplay well formated store data
+// 3. Reasearch and ask Alpher about SQL Injection prevention 
+//==============================================================================
+
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 var Table = require('cli-table');
@@ -19,7 +26,8 @@ con.connect(function(err) {
     }
 });
 
-console.log('---------- Welcome to BAMAZON! ----------');
+console.log('');
+console.log("---------- Welcome to Erick's BAMAZON! ----------");
 console.log('Please, select an item to purchase:');
 console.log('');
 
@@ -38,8 +46,8 @@ function productPurchase() {
 
         //create table: head and column size
         var table = new Table({
-            head: ['ID', 'NAME', 'DEPARTMENT', 'U$', 'Q#'],
-            colWidths: [5, 20, 15, 12, 5]
+            head: ['ID', 'NAME', 'DEPARTMENT', 'PRICE', 'QTY'],
+            colWidths: [5, 30, 15, 12, 5]
         });
 
         prod_arr.length = 0; // Clear array before add the values again
