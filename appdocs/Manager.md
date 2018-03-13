@@ -1,26 +1,26 @@
 <p align="center">
-<img src="https://github.com/GrissomErick/Bamazon/blob/master/images/bamazonCustomer.png?raw=true" alt="Project logo"></img>
+<img src="https://github.com/GrissomErick/Bamazon/blob/master/images/bamazonManager.png?raw=true" alt="Project logo"></img>
 </p>
 
 
-# Bamazon Customer Application
+# Bamazon Manager Application
  UNC Coding Boot Camp - Bamazon - Assignment #10 (MySQL)
  <p></p>
  
-**Project Description** - The Bamazon customer version of the program displays the terminal storefront and allows the customer to.
+**Project Description** - The Bamazon manager version of the program displays the terminal storefront and allows the Manager to.
 
 ## Getting Started
-To use Bamazon customer application you must accomplish the following steps below:
+To use Bamazon manager application you must accomplish the following steps below:
 
 **Step 1 - Edit the javascript MySQL information using the steps below.**
 ```
-1. open "bamazonCustomer.js" in your script editor
+1. open "bamazonManager.js" in your script editor
 2. edit lines 14 - 17 with your database connectivity information
 (Note: pay close attention to line 17, your MySQL database password)
 ```
 **Step 2 - Begin the application using the following command line.**
 ```
-node bamazonCustomer.js
+node bamazonManager.js
 ```
 
 ## Application Readme Links
@@ -34,4 +34,5 @@ Bamazon consists of three separate applications. Each of the three applications 
 ## Author
 
 * **Erick Grissom** - *JS/Node.js/MySQL* - [Erick Grissom Bamazon Repo](https://github.com/GrissomErick/Bamazon)
+
 
