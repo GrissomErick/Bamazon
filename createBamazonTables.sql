@@ -1,6 +1,6 @@
 DROP DATABASE IF EXISTS bamazon; 
 
-CREATE DATABASE IF NOT EXISTS `bamazon`
+CREATE DATABASE IF NOT EXISTS `bamazon`;
 
 USE `bamazon`;
 
