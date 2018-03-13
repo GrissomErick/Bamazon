@@ -12,7 +12,7 @@
 ## Getting Started
 To use Bamazon manager application you must accomplish the following steps below:
 
-**Step 1 - Edit the javascript MySQL information using the steps below.**
+**Step 1 - Edit the javascript MySQL information.**
 ```
 1. open "bamazonManager.js" in your script editor
 2. edit lines 14 - 17 with your database connectivity information
