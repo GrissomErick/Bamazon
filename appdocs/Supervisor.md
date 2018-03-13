@@ -7,7 +7,7 @@
  UNC Coding Boot Camp - Bamazon - Assignment #10 (MySQL)
  <p></p>
  
-**Project Description** - The Bamazon supervisor version of the program displays the terminal storefront and allows the supervisor to.
+**Project Description** - The Bamazon supervisor version of the program displays the terminal storefront and allows the supervisor to view sales by department, and create new department.
 
 ## Getting Started
 To use Bamazon supervisor application you must accomplish the following steps below:

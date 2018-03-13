@@ -7,7 +7,7 @@
  UNC Coding Boot Camp - Bamazon - Assignment #10 (MySQL)
  <p></p>
  
-**Project Description** - The Bamazon customer version of the program displays the terminal storefront and allows the customer to.
+**Project Description** - The Bamazon customer version of the program displays the terminal storefront and allows the customer to purchase storefront items, displays total based upon quantity ordered, and decrease store inventory based upon customer purchase.
 
 ## Getting Started
 To use Bamazon customer application you must accomplish the following steps below:

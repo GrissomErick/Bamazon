@@ -7,7 +7,7 @@
  UNC Coding Boot Camp - Bamazon - Assignment #10 (MySQL)
  <p></p>
  
-**Project Description** - The Bamazon manager version of the program displays the terminal storefront and allows the Manager to.
+**Project Description** - The Bamazon manager version of the program displays the terminal storefront and allows the Manager to view products for sale, view low inventory, add/ resupply inventory items, and add new products.
 
 ## Getting Started
 To use Bamazon manager application you must accomplish the following steps below:
