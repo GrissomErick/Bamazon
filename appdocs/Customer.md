@@ -26,7 +26,6 @@ node bamazonCustomer.js
 ## Application Readme Links
 Bamazon consists of three separate applications. Each of the three applications has it's own separate Readme file. To use particular  application simply click any of the links below and follow the instructions.
 
-* [Bamazon Customer App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Customer.md)
 * [Bamazon Manager App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Manager.md)
 * [Bamazon Supervisor App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Supervisor.md)
 * [Bamazon Main Readme](https://github.com/GrissomErick/Bamazon)

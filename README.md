@@ -38,7 +38,6 @@ Bamazon consists of three separate applications. Each of the three applications 
 * [Bamazon Customer App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Customer.md)
 * [Bamazon Manager App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Manager.md)
 * [Bamazon Supervisor App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Supervisor.md)
-* [Bamazon Main Readme](https://github.com/GrissomErick/Bamazon)
 
 ## Technology used
 - Node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
