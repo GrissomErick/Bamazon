@@ -9,12 +9,11 @@
  
 **Project Description** - Bamazon is Amazon-like storefront terminal console application that can take orders from a customer, display the order total, display depleted stock and resupply the inventory using a separate management terminal console application. 
 
-**Bonus** - Used the [Cli-table](https://www.npmjs.com/package/cli-table) npm package to format the terminal console table outputs
+**Bonus** - Used the [cli-table](https://www.npmjs.com/package/cli-table) npm package to format the terminal console table outputs
 
 
-
-## Getting Started
-To use the app you must accomplish the following steps below:
+## Initial Environment Setup
+To use all three versions of the Bamazon application you must accomplish the following initial steps below:
 
 **Step 1 - Clone my repo using the command line below.**
 ```
@@ -24,16 +23,23 @@ git clone https://github.com/GrissomErick/Bamazon.git
 ```
 cd Bamazon
 ```
-**Step 3 - Install required NPM packages.**
+**Step 3 - Install all required NPM packages.**
 ```
 npm install
 ```
-**Step 4 - Run the bamazon customer app**
+**Step 4 - Import the SQL file listed below to setup the initial application database tables**
 ```
-node bamazonCustomer.js
+createBamazonTables.sql
 ```
-## Required GIF Screen Capture
-<img src="https://github.com/GrissomErick/Bamazon/blob/master/images/bamazonCustomer.gif?raw=true" alt="Bamazo Customer GIF"></img>
+
+## Application Readme Links
+Bamazon consists of three separate applications. Each of the three applications has it's own separate Readme file. To use particular  application simply click any of the links below and follow the instructions.
+
+* [Bamazon Customer App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Customer.md)
+* [Bamazon Manager App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Manager.md)
+* [Bamazon Supervisor App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Supervisor.md)
+* [Bamazon Main Readme](https://github.com/GrissomErick/Bamazon)
+
 ## Technology used
 - Node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
 - MySQL NPM Package - [https://www.npmjs.com/package/mysql](https://www.npmjs.com/package/mysql)
