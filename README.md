@@ -11,6 +11,19 @@
 
 **Bonus** - Used the [cli-table](https://www.npmjs.com/package/cli-table) npm package to format the terminal console table outputs
 
+## Direct Screen Capture GIF Links
+The homework submission guide outlines animated screenshots or video is required to submit this homework assignment. I have included direct links below and well as embedded GIF images within the individual application Readme files.
+
+* <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonCustomer.gif" target="_blank">Bamazon Customer GIF</a>
+* <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonManager.gif" target="_blank">Bamazon Manager GIF</a>
+* <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonSupervisor.gif" target="_blank">Bamazon Supervisor GIF</a>
+
+## Application Readme Links
+Bamazon consists of three separate applications. Each of the three applications has it's own separate Readme file. To use particular  application simply click any of the links below and follow the instructions.
+
+* [Bamazon Customer App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Customer.md)
+* [Bamazon Manager App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Manager.md)
+* [Bamazon Supervisor App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Supervisor.md)
 
 ## Initial Environment Setup
 To use all three versions of the Bamazon application you must accomplish the following initial steps below:
@@ -31,14 +44,6 @@ npm install
 ```
 createBamazonTables.sql
 ```
-
-## Application Readme Links
-Bamazon consists of three separate applications. Each of the three applications has it's own separate Readme file. To use particular  application simply click any of the links below and follow the instructions.
-
-* [Bamazon Customer App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Customer.md)
-* [Bamazon Manager App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Manager.md)
-* [Bamazon Supervisor App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Supervisor.md)
-
 ## Technology used
 - Node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
 - MySQL NPM Package - [https://www.npmjs.com/package/mysql](https://www.npmjs.com/package/mysql)
