@@ -20,6 +20,13 @@ The homework submission guide outlines animated screenshots or video is required
 * <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonManager.gif" target="_blank">Bamazon Manager GIF</a>
 * <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonSupervisor.gif" target="_blank">Bamazon Supervisor GIF</a>
 
+## Application Readme Links
+Bamazon consists of three separate applications. Each of the three applications has it's own separate Readme file. To use particular  application simply click any of the links below and follow the instructions.
+
+* [Bamazon Customer App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Customer.md)
+* [Bamazon Supervisor App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Supervisor.md)
+* [Bamazon Main Readme](https://github.com/GrissomErick/Bamazon)
+
 ## Getting Started
 To use Bamazon manager application you must accomplish the following steps below:
 
@@ -33,13 +40,6 @@ To use Bamazon manager application you must accomplish the following steps below
 ```
 node bamazonManager.js
 ```
-
-## Application Readme Links
-Bamazon consists of three separate applications. Each of the three applications has it's own separate Readme file. To use particular  application simply click any of the links below and follow the instructions.
-
-* [Bamazon Customer App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Customer.md)
-* [Bamazon Supervisor App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Supervisor.md)
-* [Bamazon Main Readme](https://github.com/GrissomErick/Bamazon)
 
 ## Author
 
