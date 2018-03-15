@@ -7,12 +7,16 @@
  UNC Coding Boot Camp - Bamazon - Assignment #10 (MySQL)
  <p></p>
  
-**Project Description** - Bamazon is Amazon-like storefront terminal console application that can take orders from a customer, display the order total, display depleted stock and resupply the inventory using a separate management terminal console application. 
+Bamazon is Amazon-like console application that uses a terminal storefront for its interface. Bamazon consists of three separate applications designed with user specific features. Using the customer application the user can purchase storefront items, display total(s) based upon quantity ordered. The customer application will also decrease store inventory based upon each customer purchase.
+
+The Bamazon manager version of the program displays the terminal storefront, allows the manager to view products for sale, view low inventory, add/ resupply inventory items, and add new products.
+
+The supervisor version allows the supervisor to view sales by department, and create new department(s). 
 
 **Bonus** - Used the [cli-table](https://www.npmjs.com/package/cli-table) npm package to format the terminal console table outputs
 
 ## Direct Screen Capture GIF Links
-The homework submission guide outlines animated screenshots or video is required to submit this homework assignment. I have included direct links below and well as embedded GIF images within the individual application Readme files.
+The homework submission guide outlines animated screenshots or video is required to submit this homework assignment. I have included direct links below and embedded GIF images within the individual application Readme files.
 
 * <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonCustomer.gif" target="_blank">Bamazon Customer GIF</a>
 * <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonManager.gif" target="_blank">Bamazon Manager GIF</a>

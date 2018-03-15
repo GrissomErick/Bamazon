@@ -7,14 +7,14 @@
  UNC Coding Boot Camp - Bamazon - Assignment #10 (MySQL)
  <p></p>
  
-**Project Description** - The Bamazon manager version of the program displays the terminal storefront and allows the Manager to view products for sale, view low inventory, add/ resupply inventory items, and add new products.
+Project Description - The Bamazon manager version of the program displays the terminal storefront, allows the manager to view products for sale, view low inventory, add/ resupply inventory items, and add new products.
 
 ## Manager Application Screen Capture
 <img src="https://github.com/GrissomErick/Bamazon/blob/master/images/BamazonManager.gif?raw=true" alt="Customer App GIF"></img>
 </p>
 
 ## Direct Screen Capture GIF Links
-The homework submission guide outlines animated screenshots or video is required to submit this homework assignment. I have included direct links below and well as embedded GIF images within the individual application Readme files.
+The homework submission guide outlines animated screenshots or video is required to submit this homework assignment. I have included direct links below and embedded GIF images within the individual application Readme files.
 
 * <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonCustomer.gif" target="_blank">Bamazon Customer GIF</a>
 * <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonManager.gif" target="_blank">Bamazon Manager GIF</a>

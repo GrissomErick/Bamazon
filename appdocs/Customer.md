@@ -7,14 +7,14 @@
  UNC Coding Boot Camp - Bamazon - Assignment #10 (MySQL)
  <p></p>
  
-**Project Description** - The Bamazon customer version of the program displays the terminal storefront and allows the customer to purchase storefront items, displays total based upon quantity ordered, and decrease store inventory based upon customer purchase.
+The Bamazon customer version of the program displays the terminal storefront and allows the user can purchase storefront items, display total(s) based upon quantity ordered. The customer application will also decrease store inventory based upon each customer purchase.
 
 ## Customer Application Screen Capture
 <img src="https://github.com/GrissomErick/Bamazon/blob/master/images/BamazonCustomer.gif?raw=true" alt="Customer App GIF"></img>
 </p>
 
 ## Direct Screen Capture GIF Links
-The homework submission guide outlines animated screenshots or video is required to submit this homework assignment. I have included direct links below and well as embedded GIF images within the individual application Readme files.
+The homework submission guide outlines animated screenshots or video is required to submit this homework assignment. I have included direct links below and embedded GIF images within the individual application Readme files.
 
 * <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonCustomer.gif" target="_blank">Bamazon Customer GIF</a>
 * <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonManager.gif" target="_blank">Bamazon Manager GIF</a>
