@@ -21,14 +21,14 @@ The homework submission guide outlines animated screenshots or video is required
 * <a href="http://s3.amazonaws.com/ewg.uncbc/Bamazon/BamazonSupervisor.gif" target="_blank">Bamazon Supervisor GIF</a>
 
 ## Application Readme Links
-Bamazon consists of three separate applications. Each of the three applications has it's own separate Readme file. To use particular  application simply click any of the links below and follow the instructions.
+Bamazon consists of three separate applications. Each of the three applications has it's own separate Readme file. To use particular  application simply click any of the links below and follow the instructions. (NOTE: Ensure you have completed ["Initial Enviroment Setup"](https://github.com/GrissomErick/Bamazon#initial-environment-setup) steps first, BEFORE you complete the "Getting Started" steps for each seperate application Readme file.)
 
 * [Bamazon Customer App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Customer.md)
 * [Bamazon Manager App](https://github.com/GrissomErick/Bamazon/blob/master/appdocs/Manager.md)
 * [Bamazon Main Readme](https://github.com/GrissomErick/Bamazon)
 
 ## Getting Started
-To use Bamazon supervisor application you must accomplish the following steps below:
+To use Bamazon supervisor application you must accomplish the following steps below. (NOTE: Ensure you have completed ["Initial Enviroment Setup"](https://github.com/GrissomErick/Bamazon#initial-environment-setup) steps first, BEFORE you complete the "Getting Started" steps below.):
 
 **Step 1 - Edit the javascript MySQL information.**
 ```
